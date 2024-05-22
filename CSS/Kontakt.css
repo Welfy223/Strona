@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+    position: fixed;
+}
+
+
+.container .head{
+    color: #fbfdce;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#df0155,#ed4901);
+}
+
+
+ol {
+    width: 100%;
+    list-style: none;  
+}
+
+
+ol li {
+    display: block;
+    width: 100%;
+}
+
+
+ol li a {
+    color: #fbfdce;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+
+ol li a i {
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+
+
+}
+
+
+ol li:hover a {
+    background: #030303;
+    color: #00eaff;
+    letter-spacing: 5px;
+}
+
+
+input {
+    visibility: hidden;
+    display: none;
+}
+
+
+span {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+
+
+}
+
+
+#bars {
+    background: red;
+}
+
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+
+
+#check:checked ~ .container #bars {
+    display: none;
+}
+
+
+section {
+    min-height: 100vh;
+    background: url(../Zdjecia/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(80%);
+}
+
+
+#check:checked ~ section {
+    transform: scale(1.2);
+    filter: brightness(20%);
+}
+
+p{
+    font-family: "Poetsen One", sans-serif;
+}
+
+.akapit{ 
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px violet;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.Oakapit{
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px violet;
+    font-weight: bold;
+}
+
+.akapit img{
+    width: 2%;
+}
+
+.akapitd{
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px violet;
+    font-weight: bold;
+}
+
+.akapitt{
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px violet;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+section .cont{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 14px;
+    display: grid;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    text-shadow: 1px 1px 10px white;
+}
+
+.cont img{
+    transform: rotate(300deg);
+    margin: auto;
+}
+
+.nor {
+    transform: rotate(0deg) !important;
+}
+
+section .przerwa{
+    margin-top: 12px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}

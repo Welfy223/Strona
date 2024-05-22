@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="../CSS/Glowna.css">
+    <script src="https://kit.fontawesome.com/a933331b41.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Zdjecia/shortcuticon.jpg" type="image/x-icon">
+    <script>
+
+var lis = document.getElementsByClassName("avatar");
+var i = 0
+var color ='white'
+function changeColor(){
+  if(i==5){
+    i=0
+  } 
+  lis[i].style.color = color;
+  if (lis[i].style.color == "black"){
+    color = 'white'
+  }
+  else{
+    color = 'black'
+  }
+  i = i+1;
+}
+window.setInterval(changeColor,1000);
+
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <div class="container">
+    <label for="check">
+        <span class="fas fa-times" id="times"></span>
+        <span class="fas fa-bars" id="bars"></span>
+    </label>
+        <div class="head"><img src="../Zdjecia/rozalogo.png" width="30px">menu<img src="../Zdjecia/rozalogo.png" width="30px"></div>
+        <ol>
+            <li><a href="../HTML/Galeria.html"><i class="fa-solid fa-images"></i>Galeria</a></li>
+            <li><a href="../HTML/MenuWeselne.html"><i class="fa-solid fa-cake-candles"></i>Weselne</a></li>
+            <li><a href="../HTML/Mena.html"><i class="fa-solid fa-clipboard-list"></i>Jadłospisy</a></li>
+            <li><a href="../HTML/Kontakt.html"><i class="fas fa-phone"></i>Kontakt</a></li>
+            <li><a href="../HTML/Oferta.html"><i class="fa-solid fa-money-bills"></i>Oferta</a></li>
+        </ol>
+    </div>
+    <section>
+    <div class="cont">
+        <a href="../HTML/Galeria.html" class="avatar" id="li1"><i class="fa-solid fa-images"></i><b>Galeria</b></a>
+        <a href="../HTML/Kontakt.html" class="avatar" id="li5"><i class="fas fa-phone"></i><b>Kontakt</b></a>
+        <a href="../HTML/Oferta.html" class="avatar" id="li5"><i class="fa-solid fa-money-bills"></i><b>Oferta</b></a>
+        <a href="../HTML/Mena.html" class="avatar" id="li5"><i class="fa-solid fa-clipboard-list"></i>Jadłospis</a>
+        <a href="../HTML/MenuWeselne.html" class="avatar" id="li5"><i class="fa-solid fa-cake-candles"></i>Weselne</a>
+    </div>
+
+    <div class="wrapper">
+        <div class="candles">
+          <div class="light__wave"></div>
+          <div class="candle1">
+            <div class="candle1__body">
+              <div class="candle1__eyes">
+                <span class="candle1__eyes-one"></span>
+                <span class="candle1__eyes-two"></span>
+              </div>
+              <div class="candle1__mouth"></div>
+            </div>
+            <div class="candle1__stick"></div>
+          </div>
+          
+          <div class="candle2">
+            <div class="candle2__body">
+              <div class="candle2__eyes">
+                <div class="candle2__eyes-one"></div>
+                <div class="candle2__eyes-two"></div>
+              </div>
+            </div>
+            <div class="candle2__stick"></div>
+          </div>
+          <div class="candle2__fire"></div>
+          <div class="sparkles-one"></div>
+          <div class="sparkles-two"></div>
+          <div class="candle__smoke-one">
+      
+          </div>
+          <div class="candle__smoke-two">
+      
+          </div>
+          
+        </div>
+        <div class="floor">
+        </div>
+        
+      
+      </div>
+
+
+        <footer><p>Materiały zapożyczone z Google &copy; Chowaniak</p></footer>
+    </section>
+
+</body>
+</html>

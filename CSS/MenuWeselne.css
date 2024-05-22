@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.container {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+    position: fixed;
+}
+
+
+.container .head{
+    color: #fbfdce;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#df0155,#ed4901);
+}
+
+
+ol {
+    width: 100%;
+    list-style: none;  
+}
+
+
+ol li {
+    display: block;
+    width: 100%;
+}
+
+
+ol li a {
+    color: #fbfdce;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+
+ol li a i {
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+
+
+}
+
+
+ol li:hover a {
+    background: #030303;
+    color: #00eaff;
+    letter-spacing: 5px;
+}
+
+
+input {
+    visibility: hidden;
+    display: none;
+}
+
+
+span {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+
+
+}
+
+
+#bars {
+    background: red;
+}
+
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+
+
+#check:checked ~ .container #bars {
+    display: none;
+}
+
+
+section {
+    min-height: 100vh;
+    background: url(../Zdjecia/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(80%);
+}
+
+
+#check:checked ~ section {
+    transform: scale(1.2);
+    filter: brightness(20%);
+}
+
+.oakapitoddzialka{
+    margin-bottom: 40px;
+    border-bottom: 4px solid white;
+    filter: opacity(0.7);
+}
+
+.Oakapit{
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px violet;
+    font-weight: bold;
+}
+
+.img{
+    width: 20%;
+    display: flex;
+    margin: auto;
+}
+
+.cont{
+    width: 80%;
+    margin: auto;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3vw;
+}
+
+.akp{
+    text-align: center;
+    font-size: x-large;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: bisque;
+}
+
+.akp1{
+    margin-top: 12px;
+    text-align: center;
+    text-indent: 20px;
+    font-size: x-large;
+}
+
+.linkj{
+    font-size: 25px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+    background-color: white;
+    width: fit-content;
+    color: rgb(184, 140, 87);
+    padding: 0.7%;
+    border: 4px solid rgb(255, 218, 173);
+    transition: all 0.5s;
+}
+
+.linkj:hover{
+    background-color: rgb(184, 140, 87);
+    color: white;
+    transform: scale(1.2);
+}
+
+.wrapper{
+    margin: auto;
+    margin-top: 120px;
+    width: 100%;
+}
+
+.text-box{
+    color: #fff;
+}
+
+.text-box h2{
+    font-size: 30px;
+}
+
+.text-box p{
+    font-size: 16px;
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+.wrapper img{
+    max-width: 420px;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-right: 15px;
+    transition: all 1.5s ease-in-out;
+}
+
+.wrapper img:hover{
+    transform: rotate(360deg);
+}
+
+.trzy{
+    min-height: 100vh;
+    background: url(../Zdjecia/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dwa{
+    min-height: 100vh;
+    background: url(../Zdjecia/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

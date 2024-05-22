@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.container {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+    position: fixed;
+}
+
+
+.container .head{
+    color: #fbfdce;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#df0155,#ed4901);
+}
+
+
+ol {
+    width: 100%;
+    list-style: none;  
+}
+
+
+ol li {
+    display: block;
+    width: 100%;
+}
+
+
+ol li a {
+    color: #fbfdce;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+
+ol li a i {
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+
+
+}
+
+
+ol li:hover a {
+    background: #030303;
+    color: #00eaff;
+    letter-spacing: 5px;
+}
+
+
+input {
+    visibility: hidden;
+    display: none;
+}
+
+
+span {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+
+
+}
+
+
+#bars {
+    background: red;
+}
+
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+
+
+#check:checked ~ .container #bars {
+    display: none;
+}
+
+
+section {
+    min-height: 100vh;
+    background: url(../Zdjecia/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(80%);
+}
+
+
+#check:checked ~ section {
+    transform: scale(1.2);
+    filter: brightness(20%);
+}
+
+.Oakapit{
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px violet;
+    font-weight: bold;
+}
+
+.img{
+    width: 20%;
+    display: flex;
+    margin: auto;
+}
+
+.cont{
+    width: 40%;
+    margin: auto;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3vw;
+}
+
+.imgspis{
+    width: 40%;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.imgspis2{
+    width: 50%;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.spis{
+    height: fit-content;
+    margin-top: 4vh;
+}
+
+.txt{
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 4px solid rgb(82, 2, 82);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 2px lightblue;
+}
+
+.akp{
+    text-align: center;
+    text-indent: 20px;
+    font-size: large;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: black;
+    background-color: wheat;
+    border-radius: 30px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.oakapitoddzialka{
+    margin-bottom: 40px;
+    border-bottom: 4px solid white;
+    filter: opacity(0.7);
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.img2{
+    width: 20%;
+    display: flex;
+    margin: auto;
+}
