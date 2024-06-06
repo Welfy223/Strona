@@ -222,10 +222,10 @@ footer {
 
 .example{
     display: block;
+    margin: auto;
     text-decoration: none;
     text-align: center;
     font-size: 23px;
-    margin: auto;
     margin-bottom: 30px;
     color: #000000;
     text-shadow: 2px 2px 2px white, 0px 0px 0px white, 4px 0px 2px white;
